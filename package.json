@@ -1,0 +1,42 @@
+{
+  "name": "slider-for-trainer",
+  "version": "0.0.0-beta.0",
+  "description": "[BETA] Slider pour diapos formateur.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server --port 7890 ./dist",
+    "dev": "cd codebase && vite",
+    "prod:preview": "cd codebase && vite preview",
+    "build": "[[ -d dist/ ]] && rm -rfv dist; npm run build:vite && mv codebase/dist .",
+    "build:vite": "cd codebase && tsc && vite build"
+  },
+  "bin": "start.sh",
+  "keywords": [
+    "formation",
+    "slider",
+    "michael",
+    "michael cornillon",
+    "cornillon",
+    "ort",
+    "slider reveal"
+  ],
+  "author": {
+    "name": "Michael CORNILLON",
+    "email": "contact@dwaps.fr",
+    "url": "https://dwaps.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwaps/slider-for-trainer"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "animate.css": "^4.1.1",
+    "reveal.js": "^4.1.1",
+    "typescript": "^4.2.4",
+    "vite": "^2.3.3"
+  }
+}
